@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>伪元素选择器before和after</title>
+    <!-- <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* div::before 权重是2 */
+        div::before {
+            /* 这个content是必须要写的 */
+            /* display: inline-block; */
+            content: '我';
+            /* width: 30px;
+            height: 40px;
+            background-color: purple; */
+        }
+        div::after {
+            content: '小猪佩奇';
+        }
+    </style> -->
+    <style>
+      .clearfix::before,
+      .clearfix::after {
+        content: "";
+        display: table;
+      }
+      .clearfix::after {
+        clear: both;
+      }
+      /* 双伪元素清除浮动 */
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        margin: 0 30px;
+      }
+      .box1,
+      .box2,
+      .box3 {
+        float: left;
+      }
+      .big {
+        width: 200px;
+        height: 200px;
+        background-color: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clearfix">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+    </div>
+    <div class="box big">another box</div>
+  </body>
+</html>

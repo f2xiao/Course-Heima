@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 500px;
+      }
+      section {
+        perspective: 200px;
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 100px auto;
+      }
+      .first,
+      .last {
+        transform: translateZ(50px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="first"></div>
+    </section>
+    <div class="last"></div>
+  </body>
+</html>

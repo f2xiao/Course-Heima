@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- <script>
+      var flag = true; // flag 布尔型
+      var flag1 = false; // flag1 布尔型
+      console.log(flag + 1); // true 参与加法运算当1来看
+      console.log(flag1 + 1); // false 参与加法运算当 0来看
+      // 如果一个变量声明未赋值 就是 undefined 未定义数据类型
+      var str;
+      console.log(str);
+      var variable = undefined;
+      console.log(variable + "pink"); // undefinedpink
+      console.log(variable + 1); // NaN  undefined 和数字相加 最后的结果是 NaN
+      // null 空值
+      var space = null;
+      console.log(space + "pink"); // nullpink
+      console.log(space + 1); // 1
+    </script> -->
+    <script>
+      let flag = true;
+      let flag1 = false;
+      console.log(flag, flag1);
+      console.log(flag + 1);
+      console.log(flag1 + 1);
+      console.log(flag + "1");
+      let variable;
+      console.log(variable);
+      console.log(variable + "pink");
+      console.log(variable + 1);
+      console.log(variable + flag);
+      let vari = null;
+      console.log(vari);
+      console.log(vari + true); //和布尔型相加 两者都转换为数字
+      console.log(vari + variable); //和undefined相加 null转换为数字
+      console.log(vari + "pink"); //和字符串相连
+      console.log(vari + 2); // null 和数字相加 转换成数字0
+    </script>
+  </head>
+
+  <body></body>
+</html>
